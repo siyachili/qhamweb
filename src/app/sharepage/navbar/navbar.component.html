@@ -1,24 +1,43 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" routerLink="">cloudkitchenweb</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <a src="" class="logo" routerLink="">
+        
+      </a>
+      <button class="navbar-toggler" 
+               data-bs-toggle="collapse"
+               data-bs-target="#navbarNav" 
+               aria-controls="navbarNav" 
+               aria-expanded="false" 
+               aria-label="Toggle navigation"
+        >
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
+        <ul class="navbar-nav me-sm-0">
           <li class="nav-item">
-            <a class="nav-link" routerLink=""  routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}" >Home</a>
+            <a class="nav-link" routerLink=""  routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}" >HOME</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="menu" routerLinkActive="active-link">Menu</a>
+            <a class="nav-link" routerLink="menu" routerLinkActive="active-link">RECIPES</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="about" routerLinkActive="active-link">About</a>
+            <a class="nav-link" routerLink="about" routerLinkActive="active-link">ABOUT</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="contact" routerLinkActive="active-link">Contact</a>
+            <a class="nav-link" routerLink="videos" routerLinkActive="active-link">VIDEOS</a>
+          </li>
+          <li class="nav-item">
+            <a  class="nav-link" href="mailto:nkuhluq@gmail.com" routerLinkActive="active-link">CONTACT</a>
           </li>
         </ul>
       </div>
+      <div  class="collapse navbar-collapse" id="navbarNav">
+        <a href="https://www.instagram.com/minuteswithqhamie/"><i class="bi bi-instagram"></i></a>
+        <a href="#" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="#" target="_blank"><i class="bi bi-twitter"></i></a>
+
+    </div>
+      
+      
     </div>
   </nav>
