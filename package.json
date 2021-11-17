@@ -1,6 +1,13 @@
 {
-  "name": "qhamweb",
-  "version": "0.0.0",
+ 
+  
+    "name": "qhamweb",
+    "description": "a really cool app",
+    "version": "1.0.0",
+    "engines": {
+      "node": "14.18.1"
+    }
+  ,
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -36,8 +43,5 @@
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
     "typescript": "~4.3.5"
-  },
-  "engines": {
-    "node": "14.18.1"
   }
 }
