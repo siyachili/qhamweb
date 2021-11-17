@@ -46,14 +46,36 @@
     </div>
 </div>
 
-<!-- foodbox  -->
+<!-- blog -->
 <div class="container mt-4 mb-4">
-    <p class="text-center">News</p>
+    <p class="text-center">Blog</p>
+
+
     <div class="row">
         <div class="col-lg-3 mt-3" *ngFor="let fd of foodData;index as i">
-            <div class="foodbox" >
+            <div class="blog-heading" >
+                <span>
+                    My recent Posts
+                </span> 
+                <h3>
+                    Blogs
+                </h3>
+            </div>
+            <!--Blog Container--->
+            <div class="blog-container">
+                <div class="blog-box">
+                    <!--image-->
+                    <div class="blog-img">
+                        <img src="../../../assets/img/pexels-alesia-kozik-6630118.jpg" alt ="Blog">
+                    </div>
+                    <!--text-->
+                    <div class="blog-text">
+                        <span>18 May 2021 / Design</span>
+                    </div>
+                </div>
 
             </div>
+
         </div>
     </div>
    <!--<a routerLink="menu" class="viewmorebtn">view more <i class="bi bi-arrow-right"></i></a>--> 
