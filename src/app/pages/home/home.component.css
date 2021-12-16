@@ -102,6 +102,9 @@ p{
         
 
 }
+.content p{
+    position: 5px 5px;
+}
 .slider{
     position: relative;
     width: 400px;
@@ -242,10 +245,42 @@ p{
     transform-origin: 50% 50%; 
     transform: scale(1.075) translate3d(0px, 0px, 0px);
 }
-.photo p{
-    color:blue;
-    position: bottom left;
-}
+
 
 }
+
+
+
+@media (max-width: 989px){
+    .logo{
+        left: 6%;
+        top: 20px;
+        width: 130px;
+
+    }
+    .navbar-nav{
+        height: 100vh;
+    } 
+
+
+
+}
+@media (max-width: 844px){
+
+}
+
+@media (max-width: 540px){
+    .logo{
+        left: 6%;
+        top: 20px;
+        width: 75px;
+
+    }
+    .navbar-nav{
+        height: 100vh;
+    } 
+
+
+}
+
 
