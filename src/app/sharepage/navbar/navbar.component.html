@@ -2,28 +2,42 @@
     <div class="container-fluid">
       <a src="" class="logo" routerLink="">
       </a>
-      <button class="navbar-toggler" 
+      <div class="menu-btn"
                data-bs-toggle="collapse"
                data-bs-target="#navbarNav" 
                aria-controls="navbarNav" 
                aria-expanded="false" 
                aria-label="Toggle navigation"
-        >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+              >
+        <div class="hamburger"></div>
+      </div>
+      
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav me-sm-0">
           <li class="nav-item">
-            <a class="nav-link" routerLink=""  routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}" >HOME</a>
+            <a class="nav-link" routerLink=""  routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav" 
+            aria-controls="navbarNav" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation" >HOME</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="menu" routerLinkActive="active-link">RECIPES</a>
+            <a class="nav-link" routerLink="about" routerLinkActive="active-link"                
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav" 
+            aria-controls="navbarNav" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation">ABOUT</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="about" routerLinkActive="active-link">ABOUT</a>
+            <a class="nav-link" routerLink="popups" routerLinkActive="active-link">POP-UPS</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" routerLink="videos" routerLinkActive="active-link">VIDEOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="blogs" routerLinkActive="active-link">BLOGS</a>
           </li>
           <li class="nav-item">
             <a  class="nav-link" href="mailto:nkuhluq@gmail.com" routerLinkActive="active-link">CONTACT</a>

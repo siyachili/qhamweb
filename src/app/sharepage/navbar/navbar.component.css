@@ -1,15 +1,79 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap');
 
 
 .navbar-light .navbar-nav .nav-link.active-link
 {
-   
     min-height: fit-content;
     align-items: center;
     justify-content: space-between;
+    color: var(--main-color);
+}
+
+#menu-icon{
+    font-size: 2rem;
+    cursor:pointer;
+    display: none;
+}
+.hamburger{
+    width:25px;
+    height: 4px;
+    background:#3E3D48;
+    transition: 0.25s ease-in-out;
+    border-radius: 2px;
+
+}
+.hamburger::before,
+.hamburger::after{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 4px;
+    background: #3E3D48;
+    position: 0.5s ease-in-out;
+    border-radius: 2px;
 
 }
 
+.hamburger::before{
+    transform: translateY(-10px);
+
+}
+.hamburger::after{
+    transform: translateY(10px);
+
+}
+
+/*Button Animation*/
+.navbar-nav .hamburger{
+    background-color: transparent;
+
+}
+.navbar-nav .hamburger::before{
+    transform: rotate(-45deg);
+    
+}
+.navbar-nav .hamburger::after{
+    transform: rotate(-45deg);
+    
+}
+
+.menu-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    position: relative;
+}
+
+.navbar a:hover{
+    background-color: var(--main-color);
+    color:black;
+    border-radius: 2rem;
+}
 nav ul{
     float: center;
     margin-right: 25px;
@@ -19,33 +83,12 @@ nav ul li{
     display: inline-block;
     line-height: 80px;
     margin: 0 15px;
-
 }
 nav ul li a{
     position:relative;
     font-size: 16px;
     text-transform: uppercase;
- 
-
 }
-
-nav ul li a:before{
-  position: absolute;
-  left:0;
-  content:'';
-  transform-origin: right;
-  transform: scaleX(0);
-  bottom:0;
-  width: 100%;
-  height: 3px;
-
-}
-nav ul li a:hover:before{
-    transform-origin: left;
-    transform: scaleX(1);
-  
-  }
-  
 
 
 * {
@@ -59,7 +102,7 @@ background-color:white;
     }
 
 li,a,button{
-    font-family: "Montserrat",sans-serif;
+    font-family: "Poppins",sans-serif;
     font-weight: 500;
     font-size: 16px;
     color:#edf0f1;
@@ -75,6 +118,8 @@ header{
     justify-content: space-around;
     align-items: center;
     padding: 40px 12%;
+    background: #fff4f3;
+    position:fixed;
 }
 
 
@@ -88,8 +133,6 @@ header{
     background-size: cover;
     position: top left;
     display: flex;
-
-    
 }
 
 
@@ -104,9 +147,6 @@ header{
     .navbar-nav{
         height: 100vh;
     } 
-
-
-
 }
 @media (max-width: 844px){
     .logo{
@@ -122,12 +162,7 @@ header{
 {
     background-image: url('../../../assets/img/mwq2.png');
     position: center;
-   
-
-    
 }
-
-
 }
 
 @media (max-width: 540px){
@@ -140,6 +175,4 @@ header{
     .navbar-nav{
         height: 100vh;
     } 
-
-
 }
