@@ -21,7 +21,7 @@
     background:#3E3D48;
     transition: 0.25s ease-in-out;
     border-radius: 2px;
-
+    display: none;
 }
 .hamburger::before,
 .hamburger::after{
@@ -137,7 +137,7 @@ header{
 
 
 
-@media (max-width: 989px){
+@media (max-width: 1139px){
     .logo{
         left: 6%;
         top: 20px;
@@ -147,8 +147,17 @@ header{
     .navbar-nav{
         height: 100vh;
     } 
+    .hamburger{
+        width:25px;
+        height: 4px;
+        background:#3E3D48;
+        transition: 0.25s ease-in-out;
+        border-radius: 2px;
+        display: block;
+        
+    }
 }
-@media (max-width: 844px){
+@media (max-width: 989px){
     .logo{
         left: 6%;
         top: 20px;
@@ -163,6 +172,15 @@ header{
     background-image: url('../../../assets/img/mwq2.png');
     position: center;
 }
+.hamburger{
+    width:25px;
+    height: 4px;
+    background:#3E3D48;
+    transition: 0.25s ease-in-out;
+    border-radius: 2px;
+    display: block;
+    
+}
 }
 
 @media (max-width: 540px){
@@ -175,4 +193,13 @@ header{
     .navbar-nav{
         height: 100vh;
     } 
+
+    .hamburger{
+        width:25px;
+        height: 4px;
+        background:#3E3D48;
+        transition: 0.25s ease-in-out;
+        border-radius: 2px;
+       display: block;
+    }
 }

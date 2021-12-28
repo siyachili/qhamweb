@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+.banner
+{
+    background-image: url('../../../assets/img/bannerimg.jpg');
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+li,a,button,p,h1{
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color:darkslategray;
+    text-decoration: none;
+}
